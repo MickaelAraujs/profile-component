@@ -1,0 +1,116 @@
+html, body, body * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: #0C0B0B;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #0F0E0E;
+  width: 650px;
+  min-height: 300px;
+  max-height: 650px;
+}
+
+.container .profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.container .profile-container .profile-content {
+  display: flex;
+  align-items: center; 
+}
+
+.container .profile-container .profile-content img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+}
+
+.container .profile-container .profile-content .name-area {
+  margin-left: 8px;
+  color: #B7B7B7;
+}
+
+.name-area h1 {
+  font-size: 24px;
+}
+
+.name-area span {
+  font-size: 14px;
+}
+
+.profile-container .edit {
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  background-color: #0C0B0B;
+  color: #B7B7B7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.profile-container .edit img {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+.container .cards {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .cards .card {
+  width: 125px;
+  height: 75px;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 24px;
+  padding-left: 16px;
+  color: #B7B7B7;
+  cursor: pointer;
+}
+
+.container .cards .card .title {
+  font-size: 14px;
+}
+
+.container .cards .card .content {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#green {
+  background-color: #046313;
+}
+
+#blue {
+  background-color: #044A7D;
+}
+
+#yellow {
+  background-color: #725200;
+}
+
