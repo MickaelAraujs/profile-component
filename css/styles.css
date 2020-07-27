@@ -16,9 +16,11 @@ body {
 
 .container {
   background-color: #0F0E0E;
-  width: 650px;
+  width: 60%;
+  max-width: 650px;
   min-height: 300px;
   max-height: 650px;
+  border-radius: 4px;
 }
 
 .container .profile-container {
@@ -80,7 +82,7 @@ body {
 }
 
 .container .cards .card {
-  width: 125px;
+  width: 19%;
   height: 75px;
   background-color: blue;
   display: flex;
@@ -114,3 +116,48 @@ body {
   background-color: #725200;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .container .profile-container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .container .profile-container .profile-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 64px;
+  }
+
+  .container .profile-container .profile-content img {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 16px;
+  }
+
+  .name-area {
+    margin-top: 24px;
+  }
+
+  .name-area span {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin: 4px 0;
+  }
+
+  .container .cards {
+    margin-top: 8px;
+  }
+
+  .container .cards .card {
+    width: 45%;
+    margin: 16px;
+  }
+}
